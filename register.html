@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | VROOM</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/storage.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</head>
+
+<body class="auth-wrap">
+
+<main class="auth-card">
+
+    <a href="index.html" class="logo">VROOM<span>.</span></a>
+
+    <h1>Create your account.</h1>
+
+    <p>Join VROOM and book your next ride.</p>
+
+    <div id="message"></div>
+
+    <form id="registerForm">
+
+        <div class="field">
+            <label>Full name</label>
+            <input type="text" id="fullName" required>
+        </div>
+
+        <div class="field">
+            <label>Email address</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <div class="field">
+            <label>Phone number</label>
+            <input type="tel" id="phone" required>
+        </div>
+
+        <div class="field">
+            <label>Password</label>
+            <input type="password" id="password" minlength="6" required>
+        </div>
+
+        <button type="submit" class="btn" style="width:100%">
+            Create account
+        </button>
+
+    </form>
+
+    <p class="auth-foot">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</main>
+
+</body>
+</html>

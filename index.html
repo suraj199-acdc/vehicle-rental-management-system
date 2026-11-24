@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VROOM | Vehicle Rentals</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/storage.js" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">VROOM<span>.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#how">How it works</a>
+        <a href="my-bookings.html">My bookings</a>
+        <a href="login.html" id="accountLink" class="btn btn-small">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <span class="eyebrow">YOUR JOURNEY STARTS HERE</span>
+
+        <h1>
+            Find your ride.<br>
+            <span>Own the road.</span>
+        </h1>
+
+        <p>
+            Discover vehicles for every journey.
+            Book your perfect ride in just a few clicks.
+        </p>
+
+        <a href="#vehicles" class="btn">Explore vehicles →</a>
+    </div>
+
+    <div class="hero-art">
+        <div class="hero-circle">V</div>
+        <div class="hero-label">DRIVE YOUR WAY ✦</div>
+    </div>
+</section>
+
+<section class="section" id="vehicles">
+
+    <div class="section-heading">
+        <div>
+            <span class="eyebrow">THE FLEET</span>
+            <h2>Find your next ride.</h2>
+        </div>
+
+        <span id="vehicleCount" class="muted"></span>
+    </div>
+
+    <div class="search-panel">
+
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Search vehicles..."
+        >
+
+        <select id="categoryFilter">
+            <option value="">All categories</option>
+            <option value="Car">Cars</option>
+            <option value="Bike">Bikes</option>
+            <option value="SUV">SUVs</option>
+            <option value="Van">Vans</option>
+        </select>
+
+        <select id="sortFilter">
+            <option value="newest">Default</option>
+            <option value="price-low">Price: Low to high</option>
+            <option value="price-high">Price: High to low</option>
+        </select>
+
+        <button id="searchButton" class="btn">Search</button>
+
+    </div>
+
+    <div class="chips" id="quickFilters">
+        <button class="chip active" data-category="">All</button>
+        <button class="chip" data-category="Car">Cars</button>
+        <button class="chip" data-category="Bike">Bikes</button>
+        <button class="chip" data-category="SUV">SUVs</button>
+        <button class="chip" data-category="Van">Vans</button>
+    </div>
+
+    <p id="fleetNotice" class="notice"></p>
+
+    <div id="vehicleGrid" class="vehicle-grid"></div>
+
+</section>
+
+<section class="section how-section" id="how">
+
+    <span class="eyebrow">SIMPLE PROCESS</span>
+
+    <h2>Three steps. One great ride.</h2>
+
+    <div class="steps">
+
+        <article>
+            <b>01</b>
+            <h3>Choose a vehicle</h3>
+            <p>Explore our fleet and find a vehicle that fits your plans.</p>
+        </article>
+
+        <article>
+            <b>02</b>
+            <h3>Send a booking</h3>
+            <p>Select your dates and submit your booking request.</p>
+        </article>
+
+        <article>
+            <b>03</b>
+            <h3>Hit the road</h3>
+            <p>Once approved, collect your vehicle and enjoy the ride.</p>
+        </article>
+
+    </div>
+
+</section>
+
+<section class="cta">
+    <h2>Ready for your next adventure?</h2>
+    <p>Your next journey is just one booking away.</p>
+    <a href="#vehicles" class="btn btn-light">Browse vehicles →</a>
+</section>
+
+<footer>
+    <a class="logo" href="index.html">VROOM<span>.</span></a>
+    <p>© <span id="year"></span> VROOM Rentals. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

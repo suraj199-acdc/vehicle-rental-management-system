@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicle details | VROOM</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="js/storage.js" defer></script>
+    <script src="js/vehicle.js" defer></script>
+</head>
+
+<body>
+
+<header class="navbar">
+    <a href="index.html" class="logo">VROOM<span>.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="my-bookings.html">My bookings</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<main class="page-wrap">
+
+    <a href="index.html">← Back to vehicles</a>
+
+    <div id="vehicleDetails" class="panel" style="margin-top:20px">
+        Loading vehicle...
+    </div>
+
+    <section id="bookingPanel" class="panel" hidden>
+
+        <h2>Book this vehicle</h2>
+
+        <p class="muted">Choose your pickup and return dates.</p>
+
+        <div id="message"></div>
+
+        <form id="bookingForm">
+
+            <div class="form-grid">
+
+                <div class="field">
+                    <label>Pickup date</label>
+                    <input type="date" id="startDate" required>
+                </div>
+
+                <div class="field">
+                    <label>Return date</label>
+                    <input type="date" id="endDate" required>
+                </div>
+
+                <div class="field field-full">
+                    <label>Pickup location</label>
+                    <input id="pickupLocation" required>
+                </div>
+
+                <div class="field field-full">
+                    <label>Additional notes</label>
+                    <textarea id="notes" rows="3"></textarea>
+                </div>
+
+            </div>
+
+            <p id="priceEstimate" class="price"></p>
+
+            <button type="submit" class="btn">
+                Send booking request
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+</body>
+</html>
